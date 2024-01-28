@@ -7,6 +7,7 @@ export interface UpdateRole {
     id: string,
     data: {
         name: string,
+        description: string
     }
 }
 

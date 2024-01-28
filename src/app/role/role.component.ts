@@ -103,6 +103,7 @@ export class RoleComponent implements OnInit, OnDestroy {
       id: this.setEdit,
       data: {
         name: this.roleForm.get("name")?.value,
+        description: this.roleForm.get("description")?.value
       }
     }
     this.service.updateRoles('/roles/update', payload).subscribe({
